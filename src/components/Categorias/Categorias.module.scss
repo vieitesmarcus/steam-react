@@ -1,0 +1,32 @@
+@import '../colors.scss';
+.categorias{
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1280px;
+    border-radius: 4px;
+    // border: 1px solid red;
+    background-color: var(--azul);
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        // border: 1px solid red;
+        li{
+            height: 80px;
+            margin-right: 10px;
+            a{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                &.actived, &:hover{
+                    border-bottom:5px solid var(--azulColor);
+                }
+
+            }
+        }
+    }
+}

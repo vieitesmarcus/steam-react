@@ -1,0 +1,10 @@
+@import '../components/colors.scss';
+.footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    max-width: 1920px;
+    width: 100%;
+    background: var(--azul);
+}
