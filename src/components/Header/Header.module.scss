@@ -8,12 +8,33 @@
     height: 80px;
     justify-content: space-between;
     width: 100%;
-    max-width: 1920px;
+    max-width: 425px;
     padding: 0 0.7rem;
 
-    .logo {
-        margin-right: 4rem;
+    .menuHamburguer{
+        @media screen and (min-width:425px) {
+            display: none;
+        }
     }
+
+    @media screen and (min-width:425px){
+        align-items: center;
+        flex-direction: column;
+        height: 160px;
+        max-width: 1920px;
+    }
+
+    @media screen and (min-width:768px){
+        flex-direction: row;
+        height: 80px;
+        
+        align-items: center;
+        .logo {
+            margin-right: 1rem;
+        }
+        
+    }
+    
 
     .headerMenu {
         align-items: center;
@@ -21,6 +42,14 @@
         height: 100%;
         justify-content: space-between;
         width: 100%;
+        gap: 15px;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+        @media screen and (max-width:425px) {
+            flex-direction: column;
+            display: none;
+        }
         li {
             margin-right: 10px;
         }

@@ -11,6 +11,9 @@
         width: 100%;
         justify-content: space-around;
         // border: 1px solid red;
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
         li{
             height: 80px;
             margin-right: 10px;

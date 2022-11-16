@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       <Header />
-      <EmblaCarousel/>
+      <EmblaCarousel/> 
       <Categorias/>
       <Search/>
       <Vitrine/>
-      <Footer />
+       <Footer />
     </>
   )
 }

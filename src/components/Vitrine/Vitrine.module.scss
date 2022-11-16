@@ -1,14 +1,18 @@
 .vitrine{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 80px;
     margin-bottom: 80px;
-    max-width: 1280px;
-    justify-content: space-between;
+    max-width: 650px;
+    justify-content: center;
     position: relative;
     width: 100%;
-
+    gap: 15px;
+    @media screen and (min-width:1024px){
+        max-width: 1280px;
+        justify-content: space-between;
+    }
     .itens{
-        // border: 1px solid red;
         width: 280px;
         height: 450px;
         display: flex;
